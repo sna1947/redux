@@ -1,9 +1,11 @@
 
 import { combineReducers } from 'redux';
-import reducerNumber from './reducerNumber';
+import multAndDivtnReducerNumber from './multAndDivtnReducerNumber';
+import incAndDecReducerNumber from './incAndDecReducerNumber';
 
 const rootReducer = combineReducers({
-    reducerNumber
+    incAndDecReducerNumber,
+    multAndDivtnReducerNumber
 });
 
 export default rootReducer;

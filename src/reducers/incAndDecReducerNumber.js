@@ -1,14 +1,14 @@
-import React from 'react';
 
 const initialState = 0;
 
-const reducerNumber = (state = initialState, action) => {
+const incAndDecReducerNumber = (state = initialState, action) => {
     switch (action.type) {
         case 'INCREMENT': return state + 1;
+        // case 'INCREMENT': return state + action.payload;
         case 'DECREMENT': return state - 1;
         default: return state;
 
     }
 };
 
-export default reducerNumber;
+export default incAndDecReducerNumber;
